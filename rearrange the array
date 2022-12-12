@@ -1,0 +1,25 @@
+class HelloWorld {
+    
+    public static void print(int arr []){
+        int e=arr.length;
+        int s=0;
+        int arr1 [] =new int[e];
+        
+        System.out.println("elemnt of the array you select");
+        for(int i=s;i<e/2;i++){
+                arr1[2*i+1]=arr[i];
+            
+        }
+        for(int j=e-1;j>=e/2;j--){
+                arr1[(e-1-j)*2]=arr[j];
+            }
+        for(int m=0;m<e;m++){
+            System.out.print(arr1[m] + " ");
+        }
+    }
+    
+    public static void main(String[] args) {
+        int arr []={2,4,6,8,10,12};
+        print(arr);
+    }
+}
